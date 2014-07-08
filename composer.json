@@ -1,6 +1,6 @@
 {
 	"name":	"divsmith/decouplr",
-	"description":	"Dependency inversion for dependencies without their own interfaces.",
+	"description":	"IoC for interface-less dependencies.",
 	"authors": [
 		{
 			"name": "Parker Smith",
