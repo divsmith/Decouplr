@@ -1,0 +1,21 @@
+{
+	"name":	"divsmith/decouplr",
+	"description":	"Dependency inversion for dependencies without their own interfaces.",
+	"authors": [
+		{
+			"name": "Parker Smith",
+			"email": "parker@parkersmith.us"
+		}
+	],
+	"authload": {
+		"psr-4": {
+			"Decouplr\\": "src/decouplr"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*"
+	},
+	"require": {
+		"mockery/mockery": "dev-master"
+	}
+}
