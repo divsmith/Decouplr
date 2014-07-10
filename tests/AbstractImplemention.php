@@ -1,4 +1,4 @@
-<?php 
+<?php namespace Decouplr\Tests;
 
 class AbstractImplemention extends \Decouplr\Decouplr implements AbstractInterface {
 
