@@ -7,7 +7,7 @@
 			"email": "parker@parkersmith.us"
 		}
 	],
-	"authload": {
+	"autoload": {
 		"psr-4": {
 			"Decouplr\\": "src/decouplr"
 		}
