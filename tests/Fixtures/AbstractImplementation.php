@@ -2,14 +2,14 @@
 
 class AbstractImplementation extends \Decouplr\Decouplr implements AbstractInterface {
 
-    public function __construct($dependency)
+    public function add($arg1, $arg2)
     {
-        $this->dependency = $dependency;
+        return $this->__call(__FUNCTION__, func_get_args());
     }
 
     public function doStuff($arg1, $arg2)
     {
-        return $this->dependency->doStuff($arg1, $arg2);
+        return $this->__call(__FUNCTION__, func_get_args());
     }
 
 }
