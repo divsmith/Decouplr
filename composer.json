@@ -9,7 +9,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Decouplr\\": "src/decouplr"
+			"Decouplr\\": "src/"
 		}
 	},
 	"autoload-dev": {
