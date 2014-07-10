@@ -9,12 +9,12 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Decouplr\\": "src/"
+			"Decouplr\\": "src/",
+			"Decouplr\\Tests\\": "tests/"
 		}
 	},
 	"autoload-dev": {
 		"prs-4": {
-			"Decouplr\\Tests\\": "tests/"
 		}
 	},
 	"require-dev": {
