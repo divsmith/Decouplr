@@ -12,6 +12,11 @@
 			"Decouplr\\": "src/decouplr"
 		}
 	},
+	"autoload-dev": {
+		"prs-4": {
+			"Decouplr\\Tests\\": "tests/"
+		}
+	},
 	"require-dev": {
 		"phpunit/phpunit": "3.7.*"
 	},
