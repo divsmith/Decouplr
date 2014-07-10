@@ -1,6 +1,6 @@
 {
 	"name":	"divsmith/decouplr",
-	"description":	"IoC for interface-less dependencies.",
+	"description":	"IoC for non interface conforming dependencies.",
 	"authors": [
 		{
 			"name": "Parker Smith",
