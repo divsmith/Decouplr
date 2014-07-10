@@ -1,4 +1,4 @@
-<?php namespace Decouplr\Tests;
+<?php namespace Decouplr\Tests\Fixtures;
 
 class ConcreteClass {
 
