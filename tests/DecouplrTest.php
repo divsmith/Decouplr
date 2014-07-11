@@ -49,4 +49,15 @@ class DecouplrTest extends \PHPUnit_Framework_TestCase {
         $adapter = $this->createAdapter($dependency);
         $this->assertEquals(3, $adapter->add(1, 2));
     }
+
+    /**
+     * @test
+     */
+    public function non_adapter_methods_are_delegated()
+    {
+        $dependency = new ConcreteClass();
+
+        $adapter = $this->createAdapter($dependency);
+        $this->assertEquals(8, $adapter->subtract(10, 2));
+    }
 } 

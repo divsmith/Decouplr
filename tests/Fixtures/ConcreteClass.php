@@ -7,6 +7,11 @@ class ConcreteClass {
         return $arg1 + $arg2;
     }
 
+    public function subtract($arg1, $arg2)
+    {
+        return $arg1 - $arg2;
+    }
+
     public function doStuff($arg1, $arg2)
     {
         // do awesome stuff here.
