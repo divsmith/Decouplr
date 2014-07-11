@@ -67,4 +67,21 @@ Usage
 4. Enjoy! You can now typehint the interface and inject the adapter instead of the concrete dependency
     (assuming appropriate IoC bindings). Use the adapter exactly as you would the concrete dependency and
     sleep better at night knowing that your code is decoupled from it.
+    
+Other Usage
+-----------
+You can use Decouplr with empty interfaces that simply provide latches for your IoC container to resolve. 
+Just inject your concrete dependency into your adapter and let Decouplr do the rest. Not as architecturally
+sound as a well defined interface, but it gets you the benefits of not being tied to the concrete dependency 
+while not requiring you to define each method in the adapter.
+```php
+interface ExampleInterface {};
 
+class ExampleAdapter extends \Decouplr\Decouplr implements ExampleInterface{
+    
+    public function __construct(\Namespace\ConcreteDependency $dependency)
+    {
+        $this->decoupled = $dependency;
+    }
+}
+```
