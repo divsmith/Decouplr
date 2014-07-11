@@ -23,7 +23,6 @@ interface ExampleInterface {
     etc...
 }
 ```
-
 2. Create an adapter class that extends Decouplr and implements the interface.
 ```php
 class ExampleInterfaceAdapter extends \Decouplr\Decouplr implements ExampleInterface {
@@ -45,7 +44,6 @@ Each method needs to contain
 return $this->delegate(__FUNCTION__, func_get_args());
 ```
 or it will not behave as expected.
-
 3. Inject the concrete dependency via the adapter constructor. This can either be done by using
 the predefined Decouplr constructor
 ```php
@@ -63,7 +61,6 @@ class ExampleInterfaceAdapter extends\Decouplr\Decouplr implements ExampleInterf
     ...
 }
 ```
-
 4. Enjoy! You can now use the adapter exactly as you would the concrete dependency while enjoying the
 flexibility and future proofing of the interface.
 
