@@ -66,5 +66,5 @@ Usage
 
 4. Enjoy! You can now typehint the interface and inject the adapter instead of the concrete dependency
     (assuming appropriate IoC bindings). Use the adapter exactly as you would the concrete dependency and
-    sleep better at night knowing your code is decoupled from it.
+    sleep better at night knowing that your code is decoupled from it.
 
