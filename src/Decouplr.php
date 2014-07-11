@@ -9,6 +9,11 @@ abstract class Decouplr {
         $this->decoupled = $dependency;
     }
 
+    public function delegate($method, $args)
+    {
+        return $this->__call($method, $args);
+    }
+
     public function __call($method, $args)
     {
         if( is_callable([$this->decoupled, $method]) )
