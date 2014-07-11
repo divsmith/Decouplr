@@ -21,6 +21,6 @@
 		"phpunit/phpunit": "3.7.*"
 	},
 	"require": {
-		"mockery/mockery": "dev-master"
+		"mockery/mockery": "0.9.*"
 	}
 }
