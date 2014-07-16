@@ -1,6 +1,8 @@
-<?php namespace Decouplr\Tests\Fixtures;
+<?php namespace Divsmith\Decouplr\Tests\Fixtures;
 
-class AbstractImplementation extends \Decouplr\Decouplr implements AbstractInterface {
+use Divsmith\Decouplr\Decouplr;
+
+class AbstractImplementation extends Decouplr implements AbstractInterface {
 
     public function add($arg1, $arg2)
     {

@@ -1,4 +1,4 @@
-<?php namespace Decouplr; 
+<?php namespace Divsmith\Decouplr;
 
 abstract class Decouplr {
 

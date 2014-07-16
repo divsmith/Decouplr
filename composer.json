@@ -9,8 +9,8 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Decouplr\\": "src/",
-			"Decouplr\\Tests\\": "tests/"
+			"Divsmith\\Decouplr\\": "src/",
+			"Divsmith\\Decouplr\\Tests\\": "tests/"
 		}
 	},
 	"autoload-dev": {

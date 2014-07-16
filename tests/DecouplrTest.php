@@ -1,8 +1,8 @@
-<?php namespace Decouplr\Tests;
+<?php namespace Divsmith\Decouplr\Tests;
 
 use \Mockery;
-use \Decouplr\Tests\Fixtures\ConcreteClass;
-use \Decouplr\Tests\Fixtures\AbstractImplementation;
+use \Divsmith\Decouplr\Tests\Fixtures\ConcreteClass;
+use \Divsmith\Decouplr\Tests\Fixtures\AbstractImplementation;
 
 class DecouplrTest extends \PHPUnit_Framework_TestCase {
 
