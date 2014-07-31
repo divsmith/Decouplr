@@ -1,10 +1,10 @@
-<?php namespace Divsmith\Decouplr\Tests;
+<?php namespace Divsmith\Airlock\Tests;
 
 use \Mockery;
-use \Divsmith\Decouplr\Tests\Fixtures\ConcreteClass;
-use \Divsmith\Decouplr\Tests\Fixtures\AbstractImplementation;
+use \Divsmith\Airlock\Tests\Fixtures\ConcreteClass;
+use \Divsmith\Airlock\Tests\Fixtures\AbstractImplementation;
 
-class DecouplrTest extends \PHPUnit_Framework_TestCase {
+class AirlockTest extends \PHPUnit_Framework_TestCase {
 
     protected function tearDown()
     {

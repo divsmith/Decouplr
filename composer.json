@@ -1,5 +1,5 @@
 {
-	"name":	"divsmith/decouplr",
+	"name":	"divsmith/airlock",
 	"description":	"IoC for non interface conforming dependencies.",
 	"authors": [
 		{
@@ -9,8 +9,8 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Divsmith\\Decouplr\\": "src/",
-			"Divsmith\\Decouplr\\Tests\\": "tests/"
+			"Divsmith\\Airlock\\": "src/",
+			"Divsmith\\Airlock\\Tests\\": "tests/"
 		}
 	},
 	"autoload-dev": {

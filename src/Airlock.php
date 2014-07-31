@@ -1,12 +1,12 @@
-<?php namespace Divsmith\Decouplr;
+<?php namespace Divsmith\Airlock;
 
-abstract class Decouplr {
+abstract class Airlock {
 
-    protected $decoupled;
+    protected $locker;
 
     public function __construct($dependency)
     {
-        $this->decoupled = $dependency;
+        $this->locker = $dependency;
     }
 
     public function delegate($method, $args)
@@ -16,9 +16,9 @@ abstract class Decouplr {
 
     public function __call($method, $args)
     {
-        if( is_callable([$this->decoupled, $method]) )
+        if( is_callable([$this->locker, $method]) )
         {
-            return call_user_func_array([$this->decoupled, $method], $args);
+            return call_user_func_array([$this->locker, $method], $args);
         }
 
         throw new \BadMethodCallException();

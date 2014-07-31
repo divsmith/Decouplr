@@ -1,4 +1,4 @@
-<?php namespace Divsmith\Decouplr\Tests\Fixtures;
+<?php namespace Divsmith\Airlock\Tests\Fixtures;
 
 interface AbstractInterface {
     public function add($arg1, $arg2);

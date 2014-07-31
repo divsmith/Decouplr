@@ -1,8 +1,8 @@
-<?php namespace Divsmith\Decouplr\Tests\Fixtures;
+<?php namespace Divsmith\Airlock\Tests\Fixtures;
 
-use Divsmith\Decouplr\Decouplr;
+use Divsmith\Airlock\Airlock;
 
-class AbstractImplementation extends Decouplr implements AbstractInterface {
+class AbstractImplementation extends Airlock implements AbstractInterface {
 
     public function add($arg1, $arg2)
     {

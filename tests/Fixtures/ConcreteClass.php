@@ -1,4 +1,4 @@
-<?php namespace Divsmith\Decouplr\Tests\Fixtures;
+<?php namespace Divsmith\Airlock\Tests\Fixtures;
 
 class ConcreteClass {
 
