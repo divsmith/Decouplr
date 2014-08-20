@@ -9,7 +9,11 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Divsmith\\Airlock\\": "src/",
+			"Divsmith\\Airlock\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
 			"Divsmith\\Airlock\\Tests\\": "tests/"
 		}
 	},
