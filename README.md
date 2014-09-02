@@ -1,14 +1,14 @@
-Decouplr
+Airlock
 =========
-Decouplr is a simple abstract adapter class to provide decoupling to dependencies that don't specify their own interfaces.
+Airlock is a simple abstract adapter class to provide decoupling to dependencies that don't specify their own interfaces.
 
 Installation
 ------------
-Install Decouplr by adding the following to your composer.json file
+Install Airlock by adding the following to your composer.json file
 ```js
 {
     "require": {
-        "divsmith/decouplr": "1.*"
+        "divsmith/airlock": "1.*"
     }
 }
 ```
@@ -24,9 +24,9 @@ Usage
     }
     ```
 
-2. Create an adapter class that extends Decouplr and implements the interface.
+2. Create an adapter class that extends Airlock and implements the interface.
     ```php
-    class ExampleInterfaceAdapter extends \Decouplr\Decouplr implements ExampleInterface {
+    class ExampleInterfaceAdapter extends \Airlock\Airlock implements ExampleInterface {
 
         public function method1($args)
         {
@@ -47,17 +47,17 @@ Usage
     or it will not behave as expected.
 
 3. Inject the concrete dependency via the adapter constructor. This can either be done by using
-    the predefined Decouplr constructor
+    the predefined Airlock constructor
     ```php
     $adapter = new ExampleInterfaceAdapter(new ConcreteDependency());
     ```
     or typehinted and injected via an IoC container
     ```php
-    class ExampleInterfaceAdapter extends\Decouplr\Decouplr implements ExampleInterface {
+    class ExampleInterfaceAdapter extends\Airlock\Airlock implements ExampleInterface {
 
         public function __construct(\Namespace\ConcreteDependency $dependency)
         {
-            $this->decoupled = $dependency;
+            $this->locker = $dependency;
         }
 
         ...
@@ -70,18 +70,18 @@ Usage
     
 Other Usage
 -----------
-You can use Decouplr with empty interfaces that simply provide latches for your IoC container to resolve. 
-Just inject your concrete dependency into your adapter and let Decouplr do the rest. Not as architecturally
+You can use Airlock with empty interfaces that simply provide latches for your IoC container to resolve.
+Just inject your concrete dependency into your adapter and let Airlock do the rest. Not as architecturally
 sound as a well defined interface, but it gets you the benefits of not being tied to the concrete dependency 
 while not requiring you to define each method in the adapter.
 ```php
 interface ExampleInterface {};
 
-class ExampleAdapter extends \Decouplr\Decouplr implements ExampleInterface{
+class ExampleAdapter extends \Airlock\Airlock implements ExampleInterface{
     
     public function __construct(\Namespace\ConcreteDependency $dependency)
     {
-        $this->decoupled = $dependency;
+        $this->locker = $dependency;
     }
 }
 ```
